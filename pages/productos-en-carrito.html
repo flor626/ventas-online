@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos en Carrito</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_y-YEerF5ILAsKQsBlilSBF-J9rvvd-ORSw&s%22%20alt=%22Logo%20de%20la%20tienda%22%20class=%22img-fluid%22" alt="Logo" class="img-fluid">
+                </div>
+                <div class="col-md-8">
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mt-4">
+        <h1>Productos en Carrito</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Producto</th>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Producto 1</td>
+                    <td>
+                        <input type="number" value="1" min="1" class="form-control" style="width: 60px;">
+                    </td>
+                    <td>$10.00</td>
+                    <td>
+                        <button class="btn btn-danger">Eliminar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Producto 2</td>
+                    <td>
+                        <input type="number" value="1" min="1" class="form-control" style="width: 60px;">
+                    </td>
+                    <td>$15.00</td>
+                    <td>
+                        <button class="btn btn-danger">Eliminar</button>
+                    </td>
+                </tr>
+                <!-- Agregar más productos según sea necesario -->
+            </tbody>
+        </table>
+        <div class="d-flex justify-content-between">
+            <h3>Total: $25.00</h3>
+            <button class="btn btn-primary">Proceder a la compra</button>
+        </div>
+    </main>
+
+    <footer class="text-center mt-4">
+        <p>&copy; 2023 Ecommerce. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmación de Pedido</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="../index.html">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_y-YEerF5ILAsKQsBlilSBF-J9rvvd-ORSw&s%22%20alt=%22Logo%20de%20la%20tienda%22%20class=%22img-fluid%22" alt="Logo" width="30" height="30">
+                Tienda Online
+            </a>
+            <div class="collapse navbar-collapse">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Iniciar Sesión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registro.html">Registrarse</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-5">
+        <h1>Confirmación de Pedido</h1>
+        <section>
+            <h2>Resumen de tu Pedido</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Producto 1</td>
+                        <td>2</td>
+                        <td>$20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Producto 2</td>
+                        <td>1</td>
+                        <td>$15.00</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Total: $55.00</h3>
+        </section>
+
+        <section>
+            <h2>Selecciona tu Dirección de Envío</h2>
+            <form>
+                <div class="form-group">
+                    <label for="direccion">Dirección</label>
+                    <input type="text" class="form-control" id="direccion" placeholder="Ingresa tu dirección">
+                </div>
+                <div class="form-group">
+                    <label for="metodo-pago">Método de Pago</label>
+                    <select class="form-control" id="metodo-pago">
+                        <option>Tarjeta de Crédito</option>
+                        <option>PayPal</option>
+                        <option>Transferencia Bancaria</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Confirmar Pedido</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-light text-center py-3">
+        <p>&copy; 2023 Tienda Online. Todos los derechos reservados.</p>
+        <a href="../index.html">Inicio</a> | 
+        <a href="historial-pedidos.html">Historial de Pedidos</a>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
